@@ -14,6 +14,7 @@ public class Player {
             if (map.Route1[PosX][PosY--] != 0 || map.Route1[PosX][PosY--] != 4 || map.Route1[PosX][PosY--] != 5 || map.Route1[PosX][PosY--] != 6) {
             	if (map.Route1[PosX][PosY--] == 2) {
             		E.encounter();
+            		PosY--;
             	}
             	PosY--;
             	map.DrawMap();
@@ -24,6 +25,7 @@ public class Player {
         	if (map.Route1[PosX][PosY++] != 0 || map.Route1[PosX][PosY++] != 3 || map.Route1[PosX][PosY++] != 5 || map.Route1[PosX][PosY++] != 6) {
         		if (map.Route1[PosX][PosY++] == 2) {
             		E.encounter();
+            		PosY++;
             	}
         		PosY++;
         		map.DrawMap();
@@ -34,6 +36,7 @@ public class Player {
         	if (map.Route1[PosX--][PosY] != 0 || map.Route1[PosX--][PosY] != 4 || map.Route1[PosX--][PosY] != 5 || map.Route1[PosX--][PosY] != 3) {
         		if (map.Route1[PosX--][PosY] == 2) {
             		E.encounter();
+            		PosX--;
             	}
         		PosX--;
         		map.DrawMap();
@@ -45,6 +48,7 @@ public class Player {
         	if (map.Route1[PosX++][PosY] != 0 || map.Route1[PosX++][PosY] != 4 || map.Route1[PosX++][PosY] != 5 || map.Route1[PosX++][PosY] != 6) {
         		if (map.Route1[PosX--][PosY] == 2) {
             		E.encounter();
+            		PosX++;
             	}
         		PosX++;
         		map.DrawMap();
