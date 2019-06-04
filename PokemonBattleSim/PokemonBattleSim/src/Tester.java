@@ -3,6 +3,9 @@ public class Tester {
 
 	public static void main(String[] args) 
 	{
+		Map map = new Map();
+		map.DrawMap();
+
 		/*BulbasaurPokemon poke1 = new BulbasaurPokemon();
 		
 		System.out.println("Attack: "+ poke1.getAttack());
